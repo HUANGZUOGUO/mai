@@ -1,0 +1,23 @@
+img.donut {
+  position: absolute;
+  -webkit-animation: turn 2s infinite;
+  animation: turn 2s infinite;
+}
+
+.donut-front {
+  z-index: 5;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@-webkit-keyframes turn {
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+@keyframes turn {
+  to {
+    transform: rotateY(360deg);
+  }
+}
